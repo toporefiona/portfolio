@@ -244,7 +244,8 @@ footer h2 { margin-bottom: 20px; }
         <p>A battery module cold plate simulated in OpenFOAM. Python builds the geometry and mesh for any channel layout, runs 40 designs automatically, and trains a Gaussian process surrogate that predicts any design in a fraction of a second.</p>
         <p class="result">On designs it had never seen, the surrogate predicts pressure drop within 1% and temperature within 0.6 &deg;C, and it found a design cooler than any in the original study, confirmed in CFD.</p>
         <p>Validated against exact solutions to within 0.3%. Adaptive sampling reached the same accuracy with about 30% fewer simulations, and mixing cheap and accurate meshes cut computing time by three-quarters.</p>
-          <li>OpenFOAM</li><li>gmsh</li><li>Python</li><li>ParaView</li><li>MPI</li><li>SciPy</li><li>scikit-learn</li>
+        <ul class="tools" aria-label="Tools">
+        <li>OpenFOAM</li><li>gmsh</li><li>Python</li><li>ParaView</li><li>MPI</li><li>SciPy</li><li>scikit-learn</li>
         </ul>
         <a class="more" href="https://github.com/toporefiona/coldplate-cfd">Read the full study on GitHub</a>
       </div>
