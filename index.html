@@ -165,6 +165,26 @@ footer { padding: 64px 0 80px; border-top: 2px solid var(--ink); }
 footer h2 { margin-bottom: 20px; }
 .contact { display: flex; flex-wrap: wrap; gap: 12px; }
 .small { color: var(--muted); font-size: 0.9rem; margin-top: 32px; }
+  /* Print and Save as PDF */
+@media print {
+  @page { size: A4; margin: 12mm; }
+  body { background: #fff; font-size: 10pt; line-height: 1.45; }
+  header.top, .lab, .hero .btn { display: none; }
+  .wrap { max-width: none; padding: 0; }
+  section { padding: 14px 0; }
+  .hero { padding: 0 0 6px; }
+  .hero .wrap { grid-template-columns: 1fr; }
+  .featured { grid-template-columns: 1.1fr 1fr; gap: 20px; padding: 16px; margin-bottom: 14px; border-width: 1px; }
+  .project { grid-template-columns: 1fr 1.4fr; gap: 20px; padding: 12px 0; }
+  .project:nth-of-type(odd) .art { order: 0; }
+  .art { padding: 10px; }
+  .art svg { max-height: 170px; }
+  .gallery > figure { grid-column: span 2; }
+  .about .wrap { grid-template-columns: 1fr 2fr; gap: 20px; }
+  footer { padding: 14px 0 0; }
+  .featured, .project, .gallery > figure, .diss, .about, footer { break-inside: avoid; }
+  h2 { break-after: avoid; }
+}
 </style>
 </head>
 <body>
