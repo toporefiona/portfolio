@@ -231,23 +231,22 @@ footer h2 { margin-bottom: 20px; }
 <section id="projects">
   <div class="wrap">
     <h2>Projects</h2>
-    <p class="intro">Independent projects, each one on GitHub with the code and a write up.</p>
+    <p class="intro">Independent projects, each one on GitHub with the code and a write-up.</p>
 
     <article class="featured">
       <div class="media">
-        <img src="https://raw.githubusercontent.com/toporefiona/coldplate-cfd/main/results/N6_temperature.png"
-             alt="Coolant temperature across a six channel battery cold plate: the middle channels stay cool while the outer channels heat up"
+                <img src="https://raw.githubusercontent.com/toporefiona/coldplate-cfd/main/results/temperature_N16_U0113.png"
+             alt="Coolant temperature across a sixteen-channel battery cold plate, warming evenly from inlet to outlet"
              onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'fallback',textContent:'The temperature map lives in the GitHub repo.'}))">
       </div>
       <div>
         <h3>Battery cold plate CFD study</h3>
-        <p>A battery module cold plate simulated in OpenFOAM. Python builds the geometry and mesh for any channel layout, runs each design in parallel, and checks every result against the energy balance, generating the dataset for a fast surrogate model.</p>
-        <p class="result">The inlet jet, not the channels, decides the cooling: 70% of the water goes through two of six channels, and the outer cells run up to 15 &deg;C hotter.</p>
-        <p>Validated against exact solutions to within 0.3%, with a full mesh independence study. In progress: the Gaussian process surrogate trained on 40 designs.</p>
-        <ul class="tools" aria-label="Tools">
+        <p>A battery module cold plate simulated in OpenFOAM. Python builds the geometry and mesh for any channel layout, runs 40 designs automatically, and trains a Gaussian process surrogate that predicts any design in a fraction of a second.</p>
+        <p class="result">On designs it had never seen, the surrogate predicts pressure drop within 1% and temperature within 0.6 &deg;C, and it found a design cooler than any in the original study, confirmed in CFD.</p>
+        <p>Validated against exact solutions to within 0.3%. Adaptive sampling reached the same accuracy with about 30% fewer simulations, and mixing cheap and accurate meshes cut computing time by three-quarters.</p>
           <li>OpenFOAM</li><li>gmsh</li><li>Python</li><li>ParaView</li><li>MPI</li><li>SciPy</li><li>scikit-learn</li>
         </ul>
-        <a class="more" href="https://github.com/toporefiona/coldplate-cfd">Follow the study on GitHub</a>
+        <a class="more" href="https://github.com/toporefiona/coldplate-cfd">Read the full study on GitHub</a>
       </div>
     </article>
 
