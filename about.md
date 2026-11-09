@@ -3,17 +3,17 @@ layout: inner
 featured_image: '/img/fiona.jpg'
 position: left
 title: 'About Me'
-lead_text: 'MEng Architectural Engineering graduate based in London. Structural analysis, computational design, BIM coordination and energy systems optimisation.'
+lead_text: 'Architectural engineer based in London, working on CFD, simulation and computational design.'
 permalink: /about/
 ---
 
-I am a recent MEng Architectural Engineering graduate from Cardiff University with a focus on structural analysis, computational design and data-driven building performance. My work spans structural detailing, parametric design using Rhino and Grasshopper, BIM coordination across multidisciplinary teams, and energy systems optimisation through my thesis on multi-agent systems for industrial energy consumption.
+I hold an MEng in Architectural Engineering from Cardiff University. The part of the degree I enjoyed most was the computational side, and since finishing it I have been building projects that connect engineering with code and data.
 
-I am currently developing Python and data analysis skills, working on energy projects that connect my engineering background with data science. My target is to work at the intersection of engineering and data, particularly in energy systems, digital construction and building performance.
+My most recent project is an automated CFD study of a battery cold plate in OpenFOAM: a parametric geometry and mesh built in Python, 40 simulations run unattended, and a Gaussian process surrogate that predicts new designs in a fraction of a second. Before that, I built a parametric design study through the Fusion 360 API, checked with FEA in FreeCAD. My degree work covered structural analysis, BIM coordination and energy systems optimisation.
 
-I hold the UK Graduate visa until October 2027 and am based in London, available immediately.
+I am looking for roles in CFD, simulation and computational engineering, especially where physics meets machine learning. I am based in London, with the right to work in the UK until October 2027.
 
-**Skills:** Revit, AutoCAD, Rhino, Grasshopper, LUSAS, MATLAB, Python (developing), SQL (developing)
+**Skills:** OpenFOAM, Python (NumPy, pandas, SciPy, scikit-learn, matplotlib), Gmsh, ParaView, Fusion 360 API, FreeCAD, Git, Revit, AutoCAD, Rhino, Grasshopper, LUSAS, MATLAB, SQL
 
 **Education:** MEng Architectural Engineering, Cardiff University, 2:1, 2025
 
