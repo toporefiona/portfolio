@@ -255,8 +255,10 @@ footer h2 { margin-bottom: 20px; }
         <h3>Battery cold plate CFD study</h3>
                 <p>A battery cold plate simulated in OpenFOAM, with 40 designs run automatically and a Gaussian process surrogate that predicts any design in a fraction of a second.</p>
         <p class="result">On designs it had never seen, the surrogate predicts pressure drop within 1% and temperature within 0.6 &deg;C, and it found a design cooler than any in the original study, confirmed in CFD.</p>
-                       <p>Validated to within 0.3%. Adaptive sampling needed about 30% fewer simulations, and mixing cheap and accurate meshes matched the temperature accuracy for a quarter of the computing time.</p>
-        <li>OpenFOAM</li><li>gmsh</li><li>Python</li><li>ParaView</li><li>MPI</li><li>SciPy</li><li>scikit-learn</li>
+                <p>Validated to within 0.3%. Adaptive sampling needed about 30% fewer simulations, and mixing cheap and accurate meshes matched the temperature accuracy for a quarter of the computing time. A differentiable solver I wrote in JAX then optimised the channel widths, improving flow uniformity in OpenFOAM by 18% at low speed, though not once the inlet jet dominates.</p>
+                <ul class="tools" aria-label="Tools">
+                <ul class="tools" aria-label="Tools">
+        <li>OpenFOAM</li><li>gmsh</li><li>Python</li><li>JAX</li><li>ParaView</li><li>MPI</li><li>SciPy</li><li>scikit-learn</li>
         </ul>
         <a class="more" href="https://github.com/toporefiona/coldplate-cfd">Read the full study on GitHub</a>
       </div>
